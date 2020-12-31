@@ -34,11 +34,14 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-group :development, :test do # 開発環境、テスト環境
-  gem 'sqlite3' # sqlite3
+group :development, :test do
+  gem 'spring-commands-rspec'
+  gem 'rspec-rails', '~> 4.0.0.beta2'
+  gem 'sqlite3'
+  gem 'listen'
 end
 
-group :production do # 本番環境
+group :production do
   gem 'pg' # PostgreSQL
 end
 
