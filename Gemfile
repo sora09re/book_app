@@ -34,13 +34,25 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-group :development, :test do # 開発環境、テスト環境
-  gem 'sqlite3' # sqlite3
+group :production do
+  gem 'pg' # PostgreSQL
 end
 
-group :production do # 本番環境
-  gem 'pg' # PostgreSQL
+group :development, :test do
+  gem 'rails-controller-testing'
+  gem 'rspec-rails', '~> 4.0.0.beta2'
+  gem 'sqlite3'
+  gem 'listen'
+end
+
+group :development do
+  gem 'spring-commands-rspec'
+end
+
+group :test do
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'devise'
