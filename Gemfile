@@ -43,6 +43,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.0.beta2'
   gem 'sqlite3'
   gem 'listen'
+  gem 'rubocop-airbnb'
 end
 
 group :development do
