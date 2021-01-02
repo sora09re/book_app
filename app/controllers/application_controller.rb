@@ -1,10 +1,3 @@
-class UsersController < ApplicationController
-  　 def index
-   　end
-   　
-  　 def show
-   　end
+class ApplicationController < ActionController::Base
 
-  　 def new
-   　end
-  end
+end

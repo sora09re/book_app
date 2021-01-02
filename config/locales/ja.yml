@@ -8,9 +8,6 @@ ja:
           has_many: "%{record}が存在しているので削除できません"
     models:
       user: ユーザー
-      book: 本
-      comment: コメント
-      log: ブックログ
     attributes:
       user:
         id: ID
@@ -22,20 +19,6 @@ ja:
         sex: 性別
         created_at: 登録日時
         updated_at: 更新日時
-      book:
-        id: ID
-        name: タイトル
-        description: 説明
-        user_id: 作成者のID
-        book_memo: ブックメモ
-        picture: 本の写真
-      comment:
-        user_id: コメント投稿者のID
-        dish_id: コメントされた料理のID
-        content: コメント
-      log:
-        book_id: ブックログをつける本のID
-        content: メモ
   date:
     abbr_day_names:
     - 日
