@@ -9,7 +9,7 @@ RSpec.describe "ユーザー登録", type: :request do
     expect(response).to have_http_status "200"
   end
 
-  t "有効なユーザーで登録" do
+  it "有効なユーザーで登録" do
     expect {
       post users_path, params: { user: { name: "Example User",
                                          email: "user@example.com",
