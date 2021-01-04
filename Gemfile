@@ -35,6 +35,9 @@ gem 'jquery-rails', '4.3.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'will_paginate',           '3.1.7'
+gem 'bootstrap-will_paginate', '1.0.0'
+
 group :production do
   gem 'pg' # PostgreSQL
 end
